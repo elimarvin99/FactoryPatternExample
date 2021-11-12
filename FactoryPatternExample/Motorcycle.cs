@@ -6,9 +6,13 @@ namespace FactoryPatternExample
 {
     public class Motorcycle : IVehicle
     {
-        public void Drive()
+        public Motorcycle()
         {
             Console.WriteLine("Building a new Motorcycle");
+        }
+        public void Drive()
+        {
+            Console.WriteLine($"{GetType().Name} is now driving");
         }
     }
 }
